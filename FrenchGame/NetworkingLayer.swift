@@ -8,7 +8,7 @@
 import Foundation
 import SwiftHTTP
 
-let SERVER_IP = "192.168.1.101:5000"
+let SERVER_IP = "192.168.1.103:5000"
 
 struct Response: Codable {
     let status: String
