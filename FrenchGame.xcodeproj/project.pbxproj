@@ -8,12 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		001342A2214165C000B61044 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001342A1214165C000B61044 /* AppDelegate.swift */; };
-		001342A4214165C000B61044 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001342A3214165C000B61044 /* ViewController.swift */; };
+		001342A4214165C000B61044 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001342A3214165C000B61044 /* MenuViewController.swift */; };
 		001342A7214165C000B61044 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001342A5214165C000B61044 /* Main.storyboard */; };
 		001342A9214165C200B61044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001342A8214165C200B61044 /* Assets.xcassets */; };
 		001342AC214165C200B61044 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001342AA214165C200B61044 /* LaunchScreen.storyboard */; };
 		001342B7214165C200B61044 /* FrenchGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001342B6214165C200B61044 /* FrenchGameTests.swift */; };
 		001342C2214165C200B61044 /* FrenchGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001342C1214165C200B61044 /* FrenchGameUITests.swift */; };
+		001342D02141743A00B61044 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001342CF2141743A00B61044 /* WelcomeViewController.swift */; };
+		001342D22141748D00B61044 /* Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001342D12141748D00B61044 /* Segues.swift */; };
+		001342D421417E8900B61044 /* VideoCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001342D321417E8900B61044 /* VideoCaptureViewController.swift */; };
+		001342D62141825E00B61044 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 001342D52141825E00B61044 /* Inceptionv3.mlmodel */; };
+		001342D82141828C00B61044 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001342D72141828C00B61044 /* VideoCapture.swift */; };
+		002055B92141D6B50062D9BE /* success_sound_effect.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 002055B82141D67B0062D9BE /* success_sound_effect.m4a */; };
+		002055BB2141EA900062D9BE /* SwiftHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002055BA2141EA900062D9BE /* SwiftHTTP.framework */; };
+		002055BC2141EA900062D9BE /* SwiftHTTP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 002055BA2141EA900062D9BE /* SwiftHTTP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		002055BF2141EB250062D9BE /* NetworkingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002055BE2141EB250062D9BE /* NetworkingLayer.swift */; };
+		002055C121422FFD0062D9BE /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002055C021422FFD0062D9BE /* FinalViewController.swift */; };
+		002055C3214245D40062D9BE /* iOSDevCentersGifs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002055C2214245D40062D9BE /* iOSDevCentersGifs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,10 +44,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		002055BD2141EA900062D9BE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				002055BC2141EA900062D9BE /* SwiftHTTP.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0013429E214165C000B61044 /* FrenchGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrenchGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		001342A1214165C000B61044 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		001342A3214165C000B61044 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		001342A3214165C000B61044 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		001342A6214165C000B61044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		001342A8214165C200B61044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		001342AB214165C200B61044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +72,16 @@
 		001342BD214165C200B61044 /* FrenchGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrenchGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		001342C1214165C200B61044 /* FrenchGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrenchGameUITests.swift; sourceTree = "<group>"; };
 		001342C3214165C200B61044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		001342CF2141743A00B61044 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		001342D12141748D00B61044 /* Segues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segues.swift; sourceTree = "<group>"; };
+		001342D321417E8900B61044 /* VideoCaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCaptureViewController.swift; sourceTree = "<group>"; };
+		001342D52141825E00B61044 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		001342D72141828C00B61044 /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		002055B82141D67B0062D9BE /* success_sound_effect.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = success_sound_effect.m4a; sourceTree = "<group>"; };
+		002055BA2141EA900062D9BE /* SwiftHTTP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftHTTP.framework; path = Carthage/Build/iOS/SwiftHTTP.framework; sourceTree = "<group>"; };
+		002055BE2141EB250062D9BE /* NetworkingLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingLayer.swift; sourceTree = "<group>"; };
+		002055C021422FFD0062D9BE /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
+		002055C2214245D40062D9BE /* iOSDevCentersGifs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDevCentersGifs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002055BB2141EA900062D9BE /* SwiftHTTP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +113,7 @@
 		00134295214165C000B61044 = {
 			isa = PBXGroup;
 			children = (
+				002055BA2141EA900062D9BE /* SwiftHTTP.framework */,
 				001342A0214165C000B61044 /* FrenchGame */,
 				001342B5214165C200B61044 /* FrenchGameTests */,
 				001342C0214165C200B61044 /* FrenchGameUITests */,
@@ -97,12 +134,21 @@
 		001342A0214165C000B61044 /* FrenchGame */ = {
 			isa = PBXGroup;
 			children = (
+				002055B82141D67B0062D9BE /* success_sound_effect.m4a */,
+				001342D52141825E00B61044 /* Inceptionv3.mlmodel */,
 				001342A1214165C000B61044 /* AppDelegate.swift */,
-				001342A3214165C000B61044 /* ViewController.swift */,
+				001342A3214165C000B61044 /* MenuViewController.swift */,
 				001342A5214165C000B61044 /* Main.storyboard */,
 				001342A8214165C200B61044 /* Assets.xcassets */,
 				001342AA214165C200B61044 /* LaunchScreen.storyboard */,
 				001342AD214165C200B61044 /* Info.plist */,
+				001342CF2141743A00B61044 /* WelcomeViewController.swift */,
+				001342D12141748D00B61044 /* Segues.swift */,
+				001342D321417E8900B61044 /* VideoCaptureViewController.swift */,
+				001342D72141828C00B61044 /* VideoCapture.swift */,
+				002055BE2141EB250062D9BE /* NetworkingLayer.swift */,
+				002055C021422FFD0062D9BE /* FinalViewController.swift */,
+				002055C2214245D40062D9BE /* iOSDevCentersGifs.swift */,
 			);
 			path = FrenchGame;
 			sourceTree = "<group>";
@@ -135,6 +181,7 @@
 				0013429A214165C000B61044 /* Sources */,
 				0013429B214165C000B61044 /* Frameworks */,
 				0013429C214165C000B61044 /* Resources */,
+				002055BD2141EA900062D9BE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				001342AC214165C200B61044 /* LaunchScreen.storyboard in Resources */,
+				002055B92141D6B50062D9BE /* success_sound_effect.m4a in Resources */,
 				001342A9214165C200B61044 /* Assets.xcassets in Resources */,
 				001342A7214165C000B61044 /* Main.storyboard in Resources */,
 			);
@@ -255,8 +303,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				001342A4214165C000B61044 /* ViewController.swift in Sources */,
+				001342D421417E8900B61044 /* VideoCaptureViewController.swift in Sources */,
+				002055C121422FFD0062D9BE /* FinalViewController.swift in Sources */,
+				001342D82141828C00B61044 /* VideoCapture.swift in Sources */,
+				001342D62141825E00B61044 /* Inceptionv3.mlmodel in Sources */,
+				001342D02141743A00B61044 /* WelcomeViewController.swift in Sources */,
+				002055C3214245D40062D9BE /* iOSDevCentersGifs.swift in Sources */,
+				001342A4214165C000B61044 /* MenuViewController.swift in Sources */,
+				002055BF2141EB250062D9BE /* NetworkingLayer.swift in Sources */,
 				001342A2214165C000B61044 /* AppDelegate.swift in Sources */,
+				001342D22141748D00B61044 /* Segues.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +487,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 455WV77E9A;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = FrenchGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,6 +509,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 455WV77E9A;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = FrenchGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

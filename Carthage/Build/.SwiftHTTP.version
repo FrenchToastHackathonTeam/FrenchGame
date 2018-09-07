@@ -1,0 +1,27 @@
+{
+  "Mac" : [
+    {
+      "name" : "SwiftHTTP",
+      "hash" : "8ab1e3aa0a57c9b546488dc1e1b3d37bceb0f425c92ab936330cb5e16a39175f"
+    }
+  ],
+  "watchOS" : [
+    {
+      "name" : "SwiftHTTP",
+      "hash" : "0d779420a3c0956b99d7beb34660e44e7acb47304eb0dd95f179877dcb3f0a0b"
+    }
+  ],
+  "tvOS" : [
+    {
+      "name" : "SwiftHTTP",
+      "hash" : "b1f2e043f56d22e8d72483e4b93f01a893dcd9831940d0b7fa271d5804cfbaf3"
+    }
+  ],
+  "commitish" : "3.0.1",
+  "iOS" : [
+    {
+      "name" : "SwiftHTTP",
+      "hash" : "845ee94505b7987c2415e83acdb9489d146bf3e3be749f29d8f7c16d635741d0"
+    }
+  ]
+}
