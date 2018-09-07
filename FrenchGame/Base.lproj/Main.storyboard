@@ -1,17 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LBs-TC-X1u">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="rmh-1w-Axw">
+            <objects>
+                <viewController id="LBs-TC-X1u" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UTe-Mt-sOz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPa-B8-OU5">
+                                <rect key="frame" x="156" y="129" width="62" height="30"/>
+                                <state key="normal" title="Enter Pin"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="2hb-8l-bNB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9P-70-Ghb">
+                                <rect key="frame" x="155" y="229" width="64" height="30"/>
+                                <state key="normal" title="AR Demo"/>
+                                <connections>
+                                    <segue destination="wZi-Wc-Wuy" kind="show" id="igd-ii-hJc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="B9P-70-Ghb" firstAttribute="centerX" secondItem="VHq-8g-ReT" secondAttribute="centerX" id="2Mw-Hw-HBa"/>
+                            <constraint firstItem="B9P-70-Ghb" firstAttribute="firstBaseline" secondItem="BPa-B8-OU5" secondAttribute="baseline" constant="100" id="LJA-u4-kox"/>
+                            <constraint firstItem="BPa-B8-OU5" firstAttribute="top" secondItem="VHq-8g-ReT" secondAttribute="top" constant="109" id="aEj-hf-Y3G"/>
+                            <constraint firstItem="BPa-B8-OU5" firstAttribute="centerX" secondItem="VHq-8g-ReT" secondAttribute="centerX" id="xRf-9r-ajZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VHq-8g-ReT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aoQ-Lu-Yd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-420" y="495"/>
+        </scene>
         <!--Menu View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -193,6 +231,9 @@
                                 <state key="normal" title="Done">
                                     <color key="titleColor" red="0.40000000000000002" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="LBs-TC-X1u" kind="show" id="gty-RG-AIN"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" alpha="0.94999998807907104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purple_bubble3" translatesAutoresizingMaskIntoConstraints="NO" id="zoZ-7f-4lw">
                                 <rect key="frame" x="16" y="134" width="240" height="291"/>
@@ -229,6 +270,65 @@
             </objects>
             <point key="canvasLocation" x="3053.5999999999999" y="29.23538230884558"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="x4G-ek-Mr8">
+            <objects>
+                <viewController id="wZi-Wc-Wuy" customClass="ARViewController" customModule="FrenchGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oyc-FU-JCZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ftA-2h-Rp9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ez9-0w-seo">
+                                <rect key="frame" x="113" y="583" width="149" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Bonjour, chat!"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="wZi-Wc-Wuy" eventType="primaryActionTriggered" id="fSX-BB-uOW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBo-0E-VGR">
+                                <rect key="frame" x="113" y="621" width="149" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Bonjour, camion!"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="wZi-Wc-Wuy" eventType="primaryActionTriggered" id="hHe-q2-JZc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMu-Vz-5zb">
+                                <rect key="frame" x="113" y="541" width="149" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <string key="title">Bonjour, chien!
+</string>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="wZi-Wc-Wuy" eventType="primaryActionTriggered" id="hqC-xA-kEm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Rc7-Jw-GhP"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonOne" destination="iMu-Vz-5zb" id="qo8-a3-TCu"/>
+                        <outlet property="buttonThree" destination="FBo-0E-VGR" id="6cm-dP-b1q"/>
+                        <outlet property="buttonTwo" destination="ez9-0w-seo" id="s8c-GQ-6Xy"/>
+                        <outlet property="sceneView" destination="ftA-2h-Rp9" id="tFV-1C-CcQ"/>
+                        <segue destination="LBs-TC-X1u" kind="show" identifier="ARtoMenu" id="Urs-Id-Icc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MCH-LZ-gia" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="665" y="822"/>
+        </scene>
     </scenes>
     <resources>
         <image name="MrCopA" width="654" height="1486"/>
@@ -236,4 +336,7 @@
         <image name="purple_bubble2" width="172" height="204"/>
         <image name="purple_bubble3" width="172" height="204"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Urs-Id-Icc"/>
+    </inferredMetricsTieBreakers>
 </document>

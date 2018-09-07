@@ -25,6 +25,15 @@
 		002055BF2141EB250062D9BE /* NetworkingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002055BE2141EB250062D9BE /* NetworkingLayer.swift */; };
 		002055C121422FFD0062D9BE /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002055C021422FFD0062D9BE /* FinalViewController.swift */; };
 		002055C3214245D40062D9BE /* iOSDevCentersGifs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002055C2214245D40062D9BE /* iOSDevCentersGifs.swift */; };
+		002055C521424FD70062D9BE /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002055C421424FD70062D9BE /* ARViewController.swift */; };
+		002055C7214250190062D9BE /* dog_growl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002055C6214250190062D9BE /* dog_growl.mp3 */; };
+		002055CC214250260062D9BE /* Hello.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002055C8214250250062D9BE /* Hello.mp3 */; };
+		002055CD214250260062D9BE /* Hello Dog.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002055C9214250250062D9BE /* Hello Dog.mp3 */; };
+		002055CE214250260062D9BE /* Hello Cat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002055CA214250250062D9BE /* Hello Cat.mp3 */; };
+		002055CF214250260062D9BE /* Hello Truck.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002055CB214250250062D9BE /* Hello Truck.mp3 */; };
+		002055D12142502F0062D9BE /* bark.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 002055D02142502F0062D9BE /* bark.mp3 */; };
+		002055F1214250510062D9BE /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 002055D92142504B0062D9BE /* art.scnassets */; };
+		002055FF214250510062D9BE /* bubbles.png in Resources */ = {isa = PBXBuildFile; fileRef = 002055E7214250510062D9BE /* bubbles.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +91,15 @@
 		002055BE2141EB250062D9BE /* NetworkingLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingLayer.swift; sourceTree = "<group>"; };
 		002055C021422FFD0062D9BE /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 		002055C2214245D40062D9BE /* iOSDevCentersGifs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDevCentersGifs.swift; sourceTree = "<group>"; };
+		002055C421424FD70062D9BE /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		002055C6214250190062D9BE /* dog_growl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dog_growl.mp3; sourceTree = "<group>"; };
+		002055C8214250250062D9BE /* Hello.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Hello.mp3; sourceTree = "<group>"; };
+		002055C9214250250062D9BE /* Hello Dog.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hello Dog.mp3"; sourceTree = "<group>"; };
+		002055CA214250250062D9BE /* Hello Cat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hello Cat.mp3"; sourceTree = "<group>"; };
+		002055CB214250250062D9BE /* Hello Truck.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hello Truck.mp3"; sourceTree = "<group>"; };
+		002055D02142502F0062D9BE /* bark.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bark.mp3; sourceTree = "<group>"; };
+		002055D92142504B0062D9BE /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		002055E7214250510062D9BE /* bubbles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubbles.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,11 +152,19 @@
 		001342A0214165C000B61044 /* FrenchGame */ = {
 			isa = PBXGroup;
 			children = (
+				002055CA214250250062D9BE /* Hello Cat.mp3 */,
+				002055C9214250250062D9BE /* Hello Dog.mp3 */,
+				002055CB214250250062D9BE /* Hello Truck.mp3 */,
+				002055C8214250250062D9BE /* Hello.mp3 */,
+				002055D02142502F0062D9BE /* bark.mp3 */,
+				002055C6214250190062D9BE /* dog_growl.mp3 */,
 				002055B82141D67B0062D9BE /* success_sound_effect.m4a */,
 				001342D52141825E00B61044 /* Inceptionv3.mlmodel */,
 				001342A1214165C000B61044 /* AppDelegate.swift */,
 				001342A3214165C000B61044 /* MenuViewController.swift */,
 				001342A5214165C000B61044 /* Main.storyboard */,
+				002055D92142504B0062D9BE /* art.scnassets */,
+				002055E7214250510062D9BE /* bubbles.png */,
 				001342A8214165C200B61044 /* Assets.xcassets */,
 				001342AA214165C200B61044 /* LaunchScreen.storyboard */,
 				001342AD214165C200B61044 /* Info.plist */,
@@ -149,6 +175,7 @@
 				002055BE2141EB250062D9BE /* NetworkingLayer.swift */,
 				002055C021422FFD0062D9BE /* FinalViewController.swift */,
 				002055C2214245D40062D9BE /* iOSDevCentersGifs.swift */,
+				002055C421424FD70062D9BE /* ARViewController.swift */,
 			);
 			path = FrenchGame;
 			sourceTree = "<group>";
@@ -275,10 +302,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002055CD214250260062D9BE /* Hello Dog.mp3 in Resources */,
+				002055F1214250510062D9BE /* art.scnassets in Resources */,
 				001342AC214165C200B61044 /* LaunchScreen.storyboard in Resources */,
+				002055CF214250260062D9BE /* Hello Truck.mp3 in Resources */,
+				002055C7214250190062D9BE /* dog_growl.mp3 in Resources */,
 				002055B92141D6B50062D9BE /* success_sound_effect.m4a in Resources */,
+				002055CC214250260062D9BE /* Hello.mp3 in Resources */,
+				002055D12142502F0062D9BE /* bark.mp3 in Resources */,
 				001342A9214165C200B61044 /* Assets.xcassets in Resources */,
 				001342A7214165C000B61044 /* Main.storyboard in Resources */,
+				002055FF214250510062D9BE /* bubbles.png in Resources */,
+				002055CE214250260062D9BE /* Hello Cat.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +348,7 @@
 				002055BF2141EB250062D9BE /* NetworkingLayer.swift in Sources */,
 				001342A2214165C000B61044 /* AppDelegate.swift in Sources */,
 				001342D22141748D00B61044 /* Segues.swift in Sources */,
+				002055C521424FD70062D9BE /* ARViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

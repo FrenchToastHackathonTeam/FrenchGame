@@ -11,4 +11,5 @@ enum Segues: String {
     case CodeToWelcome = "CodeToWelcome"
     case WelcomeToVideo = "WelcomeToVideo"
     case VideoToWelcome = "VideoToWelcome"
+    case ARtoMenu = "ARtoMenu"
 }
